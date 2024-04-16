@@ -30,7 +30,7 @@ public class SalidaControlador {
 		return servicio.findAll();
 	}
 	
-	@GetMapping("/{idSalida}")
+	@GetMapping("{idSalida}")
 	public ResponseEntity<Salida> findById(@PathVariable long idBarco) {
 		return ResponseEntity.ok(servicio.findById(idBarco));
 	}

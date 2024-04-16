@@ -27,7 +27,7 @@ public class SocioServicio {
 	
 	public ResponseEntity<String> subirSocio(Socio socio) {
 		socioRepositorio.save(socio);
-		return ResponseEntity.status(HttpStatus.CREATED).body("Creada la salida");
+		return ResponseEntity.status(HttpStatus.CREATED).body("Creado el socio");
 	}
 	
 	public String updateSocio(Long id,Socio NuevosDatos) {

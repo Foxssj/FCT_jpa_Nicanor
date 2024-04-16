@@ -47,7 +47,7 @@ public class Barco {
     
     
     
-    @ManyToOne
+    @OneToOne
     @JoinColumn(
     		name = "idSocio",
     		referencedColumnName = "idSocio")

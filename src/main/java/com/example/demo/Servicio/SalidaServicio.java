@@ -30,10 +30,6 @@ public class SalidaServicio {
 		return ResponseEntity.status(HttpStatus.CREATED).body("Creada la salida");
 	}
 	
-	public void updateSalida(Long id,Salida NuevosDatos) {
-		
-	}
-	
 	public void deleteSalida(Long id) {
 		salidaRepositorio.deleteById(id);
 	}

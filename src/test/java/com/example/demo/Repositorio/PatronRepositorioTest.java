@@ -32,7 +32,7 @@ public class PatronRepositorioTest {
         Patron patron = patronRepositorio.findById(id).orElseThrow(()-> new IllegalArgumentException("No se encontro el barco con id" + id));
         patron.setNombre("Nuevo Dato");
         patron.setApellido("Nuevo apellido");
-        patron.setTelefono("555555555");
+        patron.setTelefono("888888888");
 
         patronRepositorio.save(patron);
     }
@@ -48,7 +48,7 @@ public class PatronRepositorioTest {
 
     @Test
     void deleteById(){
-        Long id = 2L;
+        Long id = 1L;
         if (patronRepositorio.existsById(id)) {
             patronRepositorio.deleteById(id);
         }else{throw new IllegalArgumentException("No se pudo encontrar este Id");}

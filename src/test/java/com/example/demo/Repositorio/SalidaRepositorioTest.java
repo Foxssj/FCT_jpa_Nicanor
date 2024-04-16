@@ -40,7 +40,7 @@ public class SalidaRepositorioTest {
     @Test
     void getSalidaByName(){
 
-        Salida salida = salidaRepositorio.getSalidaByDestino("");
+        Salida salida = salidaRepositorio.getSalidaByDestino("Añaza");
         
         salida.toString();
 
@@ -49,7 +49,7 @@ public class SalidaRepositorioTest {
 
     @Test
     void deleteById(){
-        Long id = 2L;
+        Long id = 1L;
         if (salidaRepositorio.existsById(id)) {
             salidaRepositorio.deleteById(id);
         }else{throw new IllegalArgumentException("No se pudo encontrar este Id");}

@@ -22,10 +22,6 @@ public class PatronServicio {
 		return patronRepositorio.findAll();
 	}
 	
-	public void updatePatron(Long id,PatronServicio NuevosDatos) {
-		
-	}
-	
 	public void subirPatron(Patron patron) {
 		patronRepositorio.save(patron);
 	}
